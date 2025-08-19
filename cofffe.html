@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee House | كافيه</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=64&auto=format&fit=crop" />
+  <meta name="description" content="موقع كافيه بسيط وجذاب باستخدام HTML و CSS فقط." />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="#" class="logo">
+        <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=96&auto=format&fit=crop" alt="Logo">
+        <span>Coffee House</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="فتح/إغلاق القائمة" />
+      <label for="nav-toggle" class="burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>بنها بتكود مع القهوة </h1>
+      <p>قهوتنا حكاية بنها </p>
+      <p>قهوتك هتشتغل بالكود (salwa shady)</p>
+      <p>مطر وفهوة وبنها العسل </p>
+      <p></p>
+      <a href="#menu" class="btn btn-primary">شوف المنيو</a>
+    </div>
+  </section>
+
+  <!-- Features / Badges -->
+  <section class="features">
+    <div class="container grid-3">
+      <div class="feature">
+        <span class="badge">محاصيل مختارة</span>
+        <p>بن عربي/أفريقي محمّص يوميًا.</p>
+      </div>
+      <div class="feature">
+        <span class="badge">بارستا محترفين</span>
+        <p>مشروبات متوازنة بطعم ثابت.</p>
+      </div>
+      <div class="feature">
+        <span class="badge">جلسات مريحة</span>
+        <p>واي-فاي ومكان مناسب للمذاكرة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>عن Coffee House</h2>
+        <p>
+          بدأنا بشغف بسيط: فنجان قهوة مظبوط وصحبة حلوة. نهتم بجودة البن وتفاصيل التحضير
+          من الطحن للصب عشان توصلك تجربة متكاملة من أول ريحة القهوة لآخر رشفة.
+        </p>
+        <ul class="ticks">
+          <li>تحميص محلي طازج</li>
+          <li>اختيارات نباتية وخالية من اللاكتوز</li>
+          <li>حلويات مخبوزة يوميًا</li>
+        </ul>
+        <a href="#contact" class="btn">اعرف العنوان</a>
+      </div>
+      <div class="about-media">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="عن الكافيه" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2 class="sec-title">المنيو</h2>
+
+      <div class="menu-filters">
+        <button class="chip active" data-filter="all">الكل</button>
+        <button class="chip" data-filter="hot">ساخن</button>
+        <button class="chip" data-filter="cold">بارد</button>
+        <button class="chip" data-filter="dessert">حلويات</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Hot -->
+        <article class="card item" data-cat="hot">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" alt="إسبريسو">
+          <div class="card-body">
+            <h3>إسبريسو</h3>
+            <p>Shot مركّز بطعم غني.</p>
+            <div class="price">45 EGP</div>
+          </div>
+        </article>
+
+        <article class="card item" data-cat="hot">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="كابتشينو">
+          <div class="card-body">
+            <h3>كابتشينو</h3>
+            <p>إسبريسو + حليب مزبد.</p>
+            <div class="price">65 EGP</div>
+          </div>
+        </article>
+
+        <!-- Cold -->
+        <article class="card item" data-cat="cold">
+          <img src="WhatsApp Image 2025-08-19 at 13.44.48_70e3c532.jpg">
+          <div class="card-body">
+            <h3>ايس كوفي</h3>
+            <p>منعش بحليب بارد.</p>
+            <div class="price">75 EGP</div>
+          </div>
+        </article>
+
+        <article class="card item" data-cat="cold">
+          <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=800&auto=format&fit=crop" alt="كولد برو">
+          <div class="card-body">
+            <h3>كولد برو</h3>
+            <p>استخلاص بارد 12 ساعة.</p>
+            <div class="price">85 EGP</div>
+          </div>
+        </article>
+
+        <!-- Dessert -->
+        <article class="card item" data-cat="dessert">
+          <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=800&auto=format&fit=crop" alt="تشيز كيك">
+          <div class="card-body">
+            <h3>تشيز كيك</h3>
+            <p>كلاسيك مع توت.</p>
+            <div class="price">95 EGP</div>
+          </div>
+        </article>
+      
+        <article class="card item" data-cat="dessert">
+          <img src="WhatsApp Image 2025-08-19 at 13.44.48_d6751bab.jpg">
+          <div class="card-body">
+            <div class="price">70 EGP</div>
+          </div>
+        </article>
+        <article class="card item" data-cat="cold">
+          <img src="images (3).jpg">
+          <div class="card-body">
+            <div class="price">60 EGP</div>
+          </div>
+        </article>
+<article class="card item" data-cat="cold">
+          <img src="images (1).jpg">
+          <div class="card-body">
+            <div class="price">80EGP</div>
+          </div>
+        </article>
+        <article class="card item" data-cat="cold">
+          <img src="images (4).jpg">
+          <div class="card-body">
+            <div class="price">80EGP</div>
+          </div>
+        </article>
+
+<article class="card item" data-cat="dessert">
+          <img src="download (1).jpg">
+          <h3>مولتن كيك</h3>
+          <div class="card-body">
+            <div class="price">65EGP</div>
+          </div>
+        </article>
+        <article class="card item" data-cat="dessert">
+          <img src="download.jpg">
+          <h3>تشيز كيك</h3>
+          <div class="card-body">
+            <div class="price">80EGP</div>
+          </div>
+        </article>
+        <article class="card item" data-cat="dessert">
+
+          <img src="images (5).jpg">
+          <h3>وافل</h3>
+          <div class="card-body">
+            <div class="price">90EGP</div>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery container">
+    <h2 class="sec-title">المعرض</h2>
+    <div class="gallery-grid">
+      <img src="1755246356902.png" alt="صورة1">
+<img src="1755246356711.png" alt="صورة2">
+ <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=1200&auto=format&fit=crop" alt="صورة 1">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200&auto=format&fit=crop" alt="صورة 2">
+      <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1200&auto=format&fit=crop" alt="صورة 3">
+    <img src="1755246356733.png" alt="1">
+     
+    <img src="WhatsApp Image 2025-08-19 at 13.46.03_ba01d9c0.jpg">
+    <img src="images (2).jpg">
+    <img src="images.jpg">
+    <img src="https://images.unsplash.com/photo-1494314671902-399b18174975?q=80&w=1200&auto=format&fit=crop" alt="صورة 4">
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="sec-title">آراء العملاء</h2>
+      <div class="testi-grid">
+        <blockquote class="testi">
+          <p>أحلى قهوة في بنها! المكان هادي وبجد بيروقني للمذاكرة.</p>
+          <span>— سارة</span>
+        </blockquote>
+        <blockquote class="testi">
+          <p>الكولد برو هنا مختلف! نكهة نظيفة ومتوازنة.</p>
+          <span>— مريم</span>
+        </blockquote>
+        <blockquote class="testi">
+          <p>حلويات طازة يوميًا… التشيز كيك خطييير.</p>
+          <span>— ندى</span>
+        </blockquote>
+        <blockquote class="testi">
+          <p>احلي كوفي مكان مناسب نعمل بروجكت ونشتغل في هدوء</p>
+          <span>— سلوي </span>
+        </blockquote>
+<blockquote class="testi">
+          <p>جربت قهوة عندكو تحفه </p>
+          <span>— روضة</span>
+        </blockquote>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="sec-title">تواصل معنا</h2>
+        <p>العنوان: اهرام شارع الاستاد، بنها — يوميًا 9 صباحًا حتى 11 مساءً.</p>
+
+</div>
+
+</section>
+
+
+
+</div>
+      <form class="form" onsubmit="event.preventDefault(); alert('تم إرسال رسالتك ✨');">
+        <label>
+          الاسم
+          <input type="text" placeholder="اسمك">
+        </label>
+        <label>
+          البريد الإلكتروني
+          <input type="email" placeholder="you@email.com">
+        </label>
+        <label>
+          رسالتك
+          <textarea rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">إرسال</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Coffee House — salwashady</p>
+      
+    </div>
+  </footer>
+
+  <!-- Tiny inline JS فقط لتفعيل الفلترة والسنة -->
+  <script>
+    // سنة الفوتر
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // فلترة المنيو
+    const chips = document.querySelectorAll('.chip');
+    const items = document.querySelectorAll('.item');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const cat = chip.dataset.filter;
+        items.forEach(it => {
+          it.style.display = (cat === 'all' || it.dataset.cat === cat) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
